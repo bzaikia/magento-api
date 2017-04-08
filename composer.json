@@ -1,0 +1,27 @@
+{
+	"name": "bzaikia/magento19",
+	"description": "Magento build for testing purpose",
+  	"minimum-stability": "dev",
+  	"license": "MIT",
+	"require": {
+		"magento-hackathon/magento-composer-installer": "~3.0",
+		"aydin-hassan/magento-core-composer-installer": "~1.2",
+		"firegento/magento": "~1.9.2.2"
+	},
+	"repositories": [
+		{
+			"type": "composer",
+            "url": "http://packages.firegento.com"
+		}
+	],
+	"extra": {
+        "magento-root-dir": "httpdocs",
+        "magento-force": 1,
+        "magento-core-deploy": {
+            "excludes": [
+                "app/etc/local.xml"
+            ]
+        }
+    }
+
+}
