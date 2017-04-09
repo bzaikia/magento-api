@@ -6,14 +6,23 @@
 	"require": {
 		"magento-hackathon/magento-composer-installer": "~3.0",
 		"aydin-hassan/magento-core-composer-installer": "~1.2",
-		"firegento/magento": "~1.9.2.2"
+		"firegento/magento": "~1.9.2.2",
+		"bzaikia/api": "dev-master"
 	},
 	"repositories": [
 		{
 			"type": "composer",
-            "url": "http://packages.firegento.com"
-		}
+		        "url": "http://packages.firegento.com"
+		},
+		{
+                        "type": "vcs",
+                        "url": "git@github.com:bzaikia/magento_api.git"
+                }
+		
 	],
+	"config": {
+        "secure-http": false
+    },
 	"extra": {
         "magento-root-dir": "httpdocs",
         "magento-force": 1,
